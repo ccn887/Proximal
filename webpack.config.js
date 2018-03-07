@@ -1,7 +1,10 @@
 var webpack = require('webpack');
 
 module.exports = {
-  target: 'node',
+  target: 'web',
+  node: {
+    fs: 'empty'
+  },
   entry: ['babel-polyfill','./client/index.js'],
   output: {
     path: __dirname,

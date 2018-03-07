@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { winner } from '../../bayesguessing'
+import { winner } from '../../public/bayesguessing'
 
 
 export default class Home extends Component {

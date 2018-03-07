@@ -1,6 +1,5 @@
 var fs = require('fs')
 var Promise = require('bluebird');
-var utils = {}
 var axios = require('axios')
 
 
@@ -9,6 +8,7 @@ var axios = require('axios')
     return new Promise((resolve, reject) => {
       axios.get(path)
       .then( data => {
+        console.log('axios DATA:', data)
         return resolve(data)})
        .catch(err => reject(err))
       });

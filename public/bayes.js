@@ -15,6 +15,7 @@ const unique = (arr) => {
 }
 
 const tokenize = text =>{
+  console.log('tokenized!')
   let uniqueme = text.toLowerCase().replace(/\W/g, ' ').replace(/\s+/g, ' ').trim().split(' ')
   return unique(uniqueme)
 }
